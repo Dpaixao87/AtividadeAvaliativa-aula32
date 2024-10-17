@@ -1,42 +1,84 @@
+/* RESET global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* FIM RESET GLOBAL */
+
+
+/* Estiliza o corpo da página */
 body {
-    font-family: "Sixtyfour Convergence", sans-serif;
-    background-color: gainsboro;
-    text-align: center;
+    color: orange; /* Define a cor do texto como laranja */
+    font-family: "Anton", sans-serif; /* Define a fonte do texto */
+    background-color: gray; /* Define a cor de fundo */
+    text-align: center; /* Centraliza o texto */
+    font-size: 35px; /* Define o tamanho da fonte */
 }
- 
+
+/* Edita o contêiner do jogo */
 #jogo {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto;
+    display: grid; /* Organizar as caixas */
+    grid-template-columns: repeat(4, 110px); /* Define 4 colunas de 110px cada */
+    gap: 25px; /* Espaçamento entre as caixas */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: center; /* Centraliza os itens */
+    margin: 30px auto; /* Margem superior automática/inferior de 30px */
 }
- 
+
+/* Estiliza cada caixa do jogo */
 .Yamaha {
-    width: 130px;
-    height: 130px;
-    background-size: cover;
-    background-position: center;
-    background-color: green;
-    color: rgb(62, 24, 199);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 8px;
+    background-size: cover; /* Ajusta a imagem e cobre todo a caixa */
+    width: 130px; /* Largura */
+    height: 130px; /* Altura */
+    background-position: center; /* Centraliza a imagem na caixa */
+    background-color: teal; /* Cor de fundo */
+    display: flex; /* Centralizar o conteúdo */
+    align-items: center; /* Alinha o conteúdo ao centro */
+    justify-content: center; /* Alinha o conteúdo ao centro */
+    border-radius: 40px; /* Bordas arredondadas das caixas */
 }
- 
+
+/* Estilo para as caixas que foram viradas */
 .flipped {
-    background-color: #0bb3aa;
+    background-color: whitesmoke; /* Cor de fundo da caixa */
 }
- 
+
+/* Estilo para as caixas que foram combinados corretamente */
 .matched {
-    background-color: #105cb3;
+    background-color: whitesmoke; /* Cor de fundo da caixa */
 }
- 
+
+/* Timer e tamanho exibido no jogo */
 #timer {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 50px; /* Tamanho da fonte do timer */
+    margin-top: 2px; /* Espaço acima do timer */
 }
- 
+
+#MISTURAR {
+    background-color: orangered; /* Cor do botão misturar */
+    color: white; /* Cor do texto */
+    font-size: 25px; /* Tamanho da fonte */
+    font-family: "Anton", sans-serif; /* Define a fonte do texto */
+    padding: 15px 25px; /* Espaçamento interno */
+    border-radius: 35px; /* Cantos arredondados */
+}
